@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(40, 2, 75);">
+    <center>
+    <form action="RUN" method="POST">
+        {% csrf_token %}
+        <textarea rows="20" cols="100" name="mycode"></textarea>
+        <input type="submit" value="RUN" >
+        <textarea rows="5" cols="50" name="input-code"></textarea>
+        <textarea readonly rows="5" cols="50" name="output">{{name}}</textarea>
+        </form>
+        <form action="EVALUATE"><input type="submit" value="EVALUATE"></form>
+
+    
+    </center>
+    <br>
+    <br>
+    <br>
+    
+    
+   
+    {% csrf_token %}
+
+    
+
+
+
+    
+</body>
+</html>

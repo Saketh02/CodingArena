@@ -1,0 +1,231 @@
+{%load static%}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Learn &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{%static 'css/animate.css'%}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{%static 'css/icomoon.css'%}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{%static 'css/magnific-popup.css'%}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{%static 'css/owl.carousel.min.css'%}">
+	<link rel="stylesheet" href="{%static 'css/owl.theme.default.min.css'%}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{%static 'css/style1.css'%}">
+
+	<!-- Modernizr JS -->
+	<script src="{%static 'js/modernizr-2.6.2.min.js'%}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1">
+						<div id="fh5co-logo"><a href="{% url 'index1' %}">Code<span>.</span></a></div>
+					</div>
+					<div class="col-xs-11 text-right menu-1">
+						<ul>
+							<li class="active"><a href="{% url 'index1' %}">Home</a></li>
+							<li class="has-dropdown">
+								<a href="courses.html">Skills Available For Practice</a>
+								<ul class="dropdown">
+									<li><a href="{% url 'c' %}">C</a></li>
+									<li><a href="{% url 'java' %}">Java</a></li>
+									<li><a href="{% url 'python' %}">Python</a></li>
+								</ul>
+							</li>
+							<li><a  href="{% url 'leader' %}">Leader Board</a></li>
+							<li><a  href="{% url 'contact' %}">Contact</a></li>
+							{% if user.is_authenticated %}
+							<li><a  href="{% url 'logout' %}">Logout</a></li>
+							{%endif%}
+						</ul>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url('{%static "images/img_bg_1.jpg"%}');" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>The Art of Coding is the Art of Assisting Discovery</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+	
+	
+	<div id="fh5co-project">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills Available For Practice</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid proj-bottom">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="{% url 'c' %}"</a><img src="{%static 'images/project-1.jpg'%}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>C</h3>
+						<span>View Questions</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="{% url 'java' %}"</a><img src="{%static 'images/project-2.jpg'%}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Java</h3>
+						<span>View Questions</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="{% url 'python' %}"</a><img src="{%static 'images/project-3.jpg'%}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Python</h3>
+						<span>View Questions</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-steps">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Start coding</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+
+			<div class="row bs-wizard animate-box" style="border-bottom:0;">
+                
+				<div class="col-xs-3 bs-wizard-step complete">
+					<div class="text-center bs-wizard-stepnum"><h4>Step 1</h4></div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#" class="bs-wizard-dot"></a>
+					<div class="bs-wizard-info text-center"><p>Register Yourself!</p></div>
+				</div>
+
+				<div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+					<div class="text-center bs-wizard-stepnum"><h4>Step 2</h4></div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#" class="bs-wizard-dot"></a>
+					<div class="bs-wizard-info text-center"><p>Learn!</p></div>
+				</div>
+
+				<div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+					<div class="text-center bs-wizard-stepnum"><h4>Step 3</h4></div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#" class="bs-wizard-dot"></a>
+					<div class="bs-wizard-info text-center"><p>Code!</p></div>
+				</div>
+
+				<div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+					<div class="text-center bs-wizard-stepnum"><h4>Step 4</h4></div>
+					<div class="progress"><div class="progress-bar"></div></div>
+					<a href="#" class="bs-wizard-dot"></a>
+					<div class="bs-wizard-info text-center"><p>Make a career!!!!</p></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2020  All Rights Reserved.</small> 
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{%static 'js/jquery.min.js'%}"></script>
+	<!-- jQuery Easing -->
+	<script src="{%static 'js/jquery.easing1.1.3.js'%}"></script>
+	<!-- Bootstrap -->
+	<script src="{%static 'js/bootstrap.min.js'%}"></script>
+	<!-- Waypoints -->
+	<script src="{%static 'js/jquery.waypoints.min.js'%}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{%static 'js/jquery.stellar.min.js'%}"></script>
+	<!-- Carousel -->
+	<script src="{%static 'js/owl.carousel.min.js'%}"></script>
+	<!-- countTo -->
+	<script src="{%static 'js/jquery.countTo.js'%}"></script>
+	<!-- Magnific Popup -->
+	<script src="{%static 'js/jquery.magnific-popup.min.js'%}"></script>
+	<script src="{%static 'js/magnific-popup-options.js'%}"></script>
+	<!-- Main -->
+	<script src="{%static 'js/main1.js'%}"></script>
+
+	</body>
+</html>
+
